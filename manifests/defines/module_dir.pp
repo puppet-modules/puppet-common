@@ -28,7 +28,7 @@ define module_dir (
 		file {
 			$dir:
 				source => [ "puppet:///${name}/module_dir", "puppet:///common/empty"],
-				checksum => mtime,
+				checksum => md5,
 				# ignore the placeholder
 				ignore => '\.ignore', 
 				recurse => true, purge => true, force => true,
