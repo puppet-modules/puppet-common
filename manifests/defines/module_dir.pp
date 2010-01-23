@@ -4,6 +4,10 @@
 # Copyright (C) 2007 David Schmitt <david@schmitt.edv-bus.at>
 # See LICENSE for the full license granted to you.
 
+# Use this variable to reference the base path. Thus you are safe from any
+# changes.
+$module_dir_path = '/var/lib/puppet/modules'
+
 # A module_dir is a storage place for all the stuff a module might want to
 # store. According to the FHS, this should go to /var/lib. Since this is a part
 # of puppet, the full path is /var/lib/puppet/modules/${name}. Every module
@@ -37,6 +41,3 @@ define module_dir (
 	}
 }
 
-# Use this variable to reference the base path. Thus you are safe from any
-# changes.
-$module_dir_path = '/var/lib/puppet/modules'
