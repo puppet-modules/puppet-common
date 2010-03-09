@@ -31,7 +31,7 @@ define module_dir (
 	} else {
 		file {
 			$dir:
-				source => [ "puppet:///${name}/module_dir", "puppet:///modules/common/empty"],
+				source => [ "puppet:///modules/${name}/module_dir", "puppet:///modules/common/empty"],
 				checksum => md5,
 				# ignore the placeholder
 				ignore => '\.ignore', 
