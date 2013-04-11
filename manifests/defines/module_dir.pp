@@ -30,7 +30,7 @@ define module_dir (
         debug("${dir} already defined")
         } else {
             file {
-                $dir:
+                [$dir]:
                     source   => [ "puppet:///modules/${name}/module_dir", 'puppet:///modules/common/empty'],
                     checksum => md5,
                     # ignore the placeholder

@@ -5,7 +5,7 @@
 #
 define append_if_no_such_line($file, $line) {
     line {
-        $name:
+        [$name]:
             ensure => present,
             file   => $file,
             line   => $line;
