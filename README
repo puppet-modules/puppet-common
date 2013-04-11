@@ -8,7 +8,7 @@ To use this module, follow these directions:
    repository placed under a directory called "common"
 
 2. Add the following line to manifests/site.pp:
-   
+
        import "modules.pp"
 
 3. Add the following line to manifests/modules.pp:
